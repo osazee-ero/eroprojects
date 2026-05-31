@@ -3,35 +3,245 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Osazee Ero | LLM Engineer Portfolio</title>
+  <title>Osazee Ero | LLM Engineer Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 15px auto 0;
+      font-size: 18px;
+      color: #d1d5db;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border: 1px solid #e5e7eb;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111827;
+      color: #d1d5db;
+      margin-top: 50px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Osazee Ero</h1>
+  <header>
+    <h1>Osazee Ero</h1>
+    <p>
+      LLM Engineer Portfolio — building practical Generative AI applications using
+      LLMs, RAG, fine-tuning, multimodal AI, and autonomous agents.
+    </p>
+  </header>
 
-  <h2>LLM Engineer Portfolio</h2>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am developing hands-on LLM engineering projects focused on real-world AI
+      applications, including intelligent agents, retrieval-augmented generation,
+      multimodal systems, fine-tuning, and deployment.
+    </p>
+  </section>
 
-  <p>
-    I am building practical Generative AI applications using LLMs, RAG,
-    fine-tuning, multimodal AI, and autonomous agents.
-  </p>
+  <section>
+    <h2>Projects</h2>
 
-  <h2>Projects</h2>
+    <div class="project-grid">
 
-  <ol>
-    <li>AI-powered brochure generator</li>
-    <li>Multi-modal customer support agent for an airline</li>
-    <li>Meeting minutes and action items from audio</li>
-    <li>Python code to optimized C++ converter</li>
-    <li>RAG knowledge-worker for company documents</li>
-    <li>Product price prediction using Frontier models</li>
-    <li>Fine-tuned open-source model for price prediction</li>
-    <li>Autonomous deal-finder agent system</li>
-  </ol>
+      <div class="project-card">
+        <span class="status">In Progress</span>
+        <h3>Project 1: AI Brochure Generator</h3>
+        <p>
+          An AI-powered tool that scrapes and navigates company websites
+          intelligently, then generates a professional brochure.
+        </p>
+        <p><strong>Tech:</strong> Python, LLMs, Web Scraping, Streamlit</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
 
-  <h2>Links</h2>
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 2: Airline Customer Support Agent</h3>
+        <p>
+          A multi-modal customer support agent with UI, function-calling,
+          and airline-related support workflows.
+        </p>
+        <p><strong>Tech:</strong> Python, LLMs, Function Calling, UI</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
 
-  <p>
-    GitHub: <a href="https://github.com/osazeeero">github.com/osazeeero</a>
-  </p>
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 3: Meeting Minutes AI</h3>
+        <p>
+          A tool that creates meeting minutes and action items from audio using
+          open-source and closed-source models.
+        </p>
+        <p><strong>Tech:</strong> Python, Audio AI, LLMs, Transcription</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 4: Python to C++ Optimizer</h3>
+        <p>
+          An AI tool that converts Python code to optimized C++ for major
+          performance improvements.
+        </p>
+        <p><strong>Tech:</strong> Python, C++, LLMs, Optimization</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 5: RAG Knowledge Worker</h3>
+        <p>
+          An AI knowledge-worker that uses RAG to answer company-related
+          questions from internal documents.
+        </p>
+        <p><strong>Tech:</strong> Python, RAG, Vector Database, LLMs</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 6: Price Prediction with Frontier Models</h3>
+        <p>
+          A capstone project that predicts product prices from short descriptions
+          using frontier LLMs.
+        </p>
+        <p><strong>Tech:</strong> Python, LLMs, Regression, Evaluation</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 7: Fine-tuned Price Prediction Model</h3>
+        <p>
+          A fine-tuned open-source model designed to compete with frontier models
+          on price prediction.
+        </p>
+        <p><strong>Tech:</strong> Python, Fine-tuning, LoRA, Open-source LLMs</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="status">Planned</span>
+        <h3>Project 8: Autonomous Deal Finder Agent</h3>
+        <p>
+          An autonomous agent system that collaborates with models to spot deals
+          and notify users of special bargains.
+        </p>
+        <p><strong>Tech:</strong> Python, Agents, LLMs, Automation</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      GitHub:
+      <a href="https://github.com/osazeeero">
+        github.com/osazeeero
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Osazee Ero| LLM Engineer Portfolio</p>
+  </footer>
 </body>
 </html>
